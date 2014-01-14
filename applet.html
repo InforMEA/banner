@@ -4,80 +4,75 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Untitled Document</title>
 <style type="text/css">
-div{
+
+div.informea {
     -moz-border-radius: 50px/50px;
-background-color:#308FC0;
-    border:solid 2px #308FC0; 
+    background-color:#308FC0;
+    border:solid 2px #308FC0;
     width:200px;
-    height:180px; 
-background: linear-gradient(#3398CB, #26739A);  
+    height:180px;
+    background: linear-gradient(#3398CB, #26739A);
 }
-.border {
-   	background-color: #FFCC66;
-margin-left: 3px;
-margin-right: 3px;
-height: 26px;
+
+div.informea>.title {
+    font-size: 30px;
+    color: #F7FAF7;
+    background-image:url(images/UNlogo.png);
+    background-repeat: no-repeat;
+    padding: 0px 15px 10px 55px;
+    margin: 3px 3px 3px 3px;
 }
-.title {
-font-size: 30px; 
-color: #F7FAF7; 
-background-image:url(images/UNlogo.png);
-background-repeat: no-repeat;
-padding: 0px 15px 10px 55px;
-margin: 3px 3px 3px 3px;
+
+div.informea>.text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 5px;
+    line-height: 20px;
 }
-.text {
-color: #FFFFFF; 
-font-size: 15px; 
-font-family: "Times New Roman", Times, serif; 
-margin-left: 5px;
-line-height: 20px;
-}
+
 input, textarea{
-width: 82%;
-float: left;
-height: 22px !important;
-border: 1px solid #FFCC66;
+    width: 82%;
+    float: left;
+    height: 22px !important;
+    border: 1px solid #FFCC66;
 }
-.link
-{
-color:#CCCCCC;
-text-align:right;
-text-decoration:none;
+
+div.informea>.link {
+    color:#CCCCCC;
+    text-align:right;
+    text-decoration:none;
 }
-.link a
-{
-color:#CCCCCC;
-text-align:right;
-text-decoration:none;
-padding-right: 4px;
+
+div.informea>.link a {
+    color:#CCCCCC;
+    text-align:right;
+    text-decoration:none;
+    padding-right: 4px;
 }
-.img
-{
-float:left;
-padding-left:0px;
-padding-right: 6px;
-}
-form
-{
-background-image:url(images/search.png);
-background-repeat: no-repeat;
-background-position: right;
+
+div.informea>form {
+    background-image:url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    background-color: #FFCC66;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 26px;
 }
 </style>
 </head>
 <body>
-<div>
-  <p class="title"> InforMEA</p>
- 
-  <form id="searchbar" name="searchbar" method="post" action="" class="border">
-  <label class="label">
-  <input name="textfield" type="text" value="" />
-  </label>
-</form>
-<p class="text">COP Decision, MEA News, Treaty Texts and More.</p>
-<p class="link"><a href="http://www.informea.org" target="_blank">www.informea.org </a></p>
-</div>
+    <div class="informea">
+        <p class="title">InforMEA</p>
+        <form id="searchbar" name="searchbar" method="post" action="">
+            <label class="label">
+                <input name="textfield" type="text" value="" />
+            </label>
+        </form>
+        <p class="text">COP Decision, MEA News, Treaty Texts and More.</p>
+        <p class="link"><a href="http://www.informea.org" target="_blank">www.informea.org</a></p>
+    </div>
 </body>
 </html>
-
