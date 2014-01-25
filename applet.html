@@ -1,22 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>InforMEA banner</title>
-<link rel="stylesheet" href="styles.css"></link>
-</head>
-<body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>InforMEA banner</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
     <!-- COPY START -->
-    <div class="informea">
-        <p class="title">InforMEA</p>
-        <form id="searchbar" name="searchbar" method="post" action="">
-            <label class="label">
-                <input name="textfield" type="text" value="" />
-            </label>
-        </form>
-        <p class="text">COP Decision, MEA News, Treaty Texts and More.</p>
-        <p class="link"><a href="http://www.informea.org" target="_blank">www.informea.org</a></p>
+    <div id="informea">
+      <p class="title">InforMEA</p>
+      <form id="searchbar" name="searchbar" method="get" action="http://www.informea.org/search_external">
+        <input type="text" value="" class="search" name="q_freetext" placeholder="Search informea.org" />
+        <input type="image" class="button" src="http://www.informea.org/wp-content/uploads/2014/01/search.png" value="" />
+      </form>
+      <p class="slogan">COP Decision, MEA News, Treaty Texts and More.</p>
+      <p class="link"><a href="http://www.informea.org" target="_blank" title="Visit InforMEA website">www.informea.org</a></p>
     </div>
     <!-- COPY END -->
-</body>
+  </body>
 </html>
