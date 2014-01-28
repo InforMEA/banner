@@ -3,13 +3,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>InforMEA banner</title>
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- COPY START -->
     <div id="informea">
       <p class="title">InforMEA</p>
       <form id="searchbar" name="searchbar" method="get" action="http://www.informea.org/search">
+        <input type="hidden" name="external" value="1" />
         <input type="text" value="" class="search" name="q_freetext" placeholder="Search informea.org" />
         <input type="image" class="button" src="http://www.informea.org/wp-content/uploads/2014/01/search.png" value="" />
       </form>
