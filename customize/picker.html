@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
 <style type="text/css">
 div#informea{-moz-border-radius:50px/50px;background-color:#308fc0;border:solid 2px #308fc0;width:190px;height:160px;border-radius:5px;background:linear-gradient(#3398cb,#26739a);font-family:FontAwesome;font-size:15px}
-div#informea .title{font-size:26px;color:#F2F7F2;background-image:url(http://www.informea.org/wp-content/uploads/2014/10/UNlogo-transparent.png);background-repeat: no-repeat;padding: 0px 15px 15px 49px;margin: 3px 0px 0px 0px;}
+div#informea .title{font-size:26px;color:#F2F7F2; padding: 0px 15px 15px 8px;margin: 3px 0px 0px 0px;}
 div#informea .slogan{color:#fffdfd;margin-left:5px;line-height:18px}
 div#informea input.button{border-top:2px solid #fc6;border-bottom:2px solid #fc6;border-left:0;border-right:0;background-color:#fc6;background-image:url(http://www.informea.org/wp-content/uploads/2014/01/search.png);background-repeat:no-repeat;background-position:left;width:34px;height:20px;border-top-right-radius:2px 2px;border-bottom-right-radius:2px 2px;margin-top:2px;margin-left:-2px}
 div#informea .search{padding:0 2px;border:1px solid #fc6;border-right:0;border-top-left-radius:2px 2px;border-bottom-left-radius:2px 2px;width:140px;float:left;height:22px;margin-left:6px;margin-top:2px;font-size:12px;font-weight:normal}
@@ -62,16 +62,7 @@ cursor: pointer;
 
 <script type="text/javascript">
 $(document).ready(function(){
-	//change logos
-	//$('.logoToUse').on('click', function() {
-		//alert($(this).prop('src'));
-		//$('div#informea .title').css('background-image',$(this).prop('src'));
-	$('li img').click(function(){
-		var imgbg = $(this).attr('dir');
-		//console.log(imgbg);
-	$('div#informea .title').css({backgroundImage: "url("+imgbg+")"});	
-	});
-	//generate code
+		//generate code
 	$('#generate').on('click', function() {
 		var originalCSS = $("#origStyle")[0].innerHTML;
 		var appletCode = $("#informea")[0].outerHTML;
@@ -105,11 +96,6 @@ $(document).ready(function(){
 	//function updating applet options
 	function updateApplet(selectorID, value) {
 		switch (selectorID) {
-			case 'titleColor':	//update title color
-				$('div#informea .title').css('color','#'+value);
-				//alert('set title color to: #'+value);
-				break;
-				
 			case 'textColor':	//update text color
 				$('div#informea .slogan').css('color','#'+value);
 				break;
@@ -203,7 +189,7 @@ $(document).ready(function(){
 <div id="origStyle" style="display:none">
 <style type="text/css">
 div#informea{-moz-border-radius:50px/50px;background-color:#308fc0;border:solid 2px #308fc0;width:190px;height:160px;border-radius:5px;background:linear-gradient(#3398cb,#26739a);font-family:FontAwesome,Times,serif;font-size:15px}
-div#informea .title{font-size: 26px; color: #F2F7F2; background-image:url(http://www.informea.org/wp-content/uploads/2014/10/UNlogo-transparent.png); background-repeat: no-repeat; padding: 0px 15px 15px 49px;margin: 3px 0px 0px 0px;}
+div#informea .title{font-size: 26px; color: #F2F7F2;padding: 0px 15px 15px 8px;margin: 3px 0px 0px 0px;}
 div#informea .slogan{color:#fffdfd;margin-left:5px;line-height:18px}
 div#informea input.button{border-top:2px solid #fc6;border-bottom:2px solid #fc6;border-left:0;border-right:0;background-color:#fc6;background-image:url(http://www.informea.org/wp-content/uploads/2014/01/search.png);background-repeat:no-repeat;background-position:left;width:34px;height:20px;border-top-right-radius:2px 2px;border-bottom-right-radius:2px 2px;margin-top:2px;margin-left:-2px}
 div#informea .search{padding:0 2px;border:1px solid #fc6;border-right:0;border-top-left-radius:2px 2px;border-bottom-left-radius:2px 2px;width:140px;float:left;height:22px;margin-left:6px;margin-top:2px;font-size:12px;font-weight:normal}
